@@ -1,8 +1,8 @@
 import { Builder } from '@builder.io/react'
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
+import { MyFunComponent } from '@/app/_components/MyFunComponent'
 
-Builder.registerComponent(
-  dynamic(() => import('@/app/_components/MyFunComponent')),
+Builder.registerComponent(MyFunComponent,
   {
     name: 'MyFunComponent',
     inputs: [{ name: 'text', type: 'string', defaultValue: 'Hello, Builder!' }],
