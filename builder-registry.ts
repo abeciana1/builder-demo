@@ -14,3 +14,10 @@ Builder.registerComponent(
      */
   }
 )
+
+Builder.register('insertMenu', {
+  name: 'My Components',
+  items: [
+    {name: 'MyFunComponent'}
+  ]
+})
